@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Rubik's Cube Everywhere! --- WCA Rules 14</title>
+    <title>Rubik's Cube Everywhere! --- WCA Rules 16</title>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -82,7 +82,7 @@
         /*cube face backside black setting */
         .fsUp:after   {-webkit-transform: matrix3d(1,0,0,0,   0,1,0,0,   0,0,1,0,   0,0,-0.15,1);
                                transform: matrix3d(1,0,0,0,   0,1,0,0,   0,0,1,0,   0,0,-0.15,1);
-                        border: solid green 5px; border-radius:0px; 
+                        border: solid yellow 5px; border-radius:0px; 
                         content:''; background-color: black; width:103%; height:103%; box-sizing: border-box; position:absolute;}
         .fsDown:after {-webkit-transform: matrix3d(1,0,0,0,   0,-1,0,0,  0,0,-1,0,  0,0,-0.15,1);
                                transform: matrix3d(1,0,0,0,   0,-1,0,0,  0,0,-1,0,  0,0,-0.15,1);
@@ -90,19 +90,19 @@
                         content:''; background-color: black; width:103%; height:103%; box-sizing: border-box; position:absolute;} 
         .fsFront:after{-webkit-transform: matrix3d(1,0,0,0,   0,0,-1,0,  0,1,0,0,   0,-0.15,0,1);
                                transform: matrix3d(1,0,0,0,   0,0,-1,0,  0,1,0,0,   0,-0.15,0,1);
-                        border: solid green 5px; border-radius:0px; 
+                        border: solid red 5px; border-radius:0px; 
                         content:''; background-color: black; width:103%; height:103%; box-sizing: border-box; position:absolute;} 
         .fsBack:after {-webkit-transform: matrix3d(1,0,0,0,   0,0,1,0,   0,-1,0,0,  0,-0.15,0,1);
                                transform: matrix3d(1,0,0,0,   0,0,1,0,   0,-1,0,0,  0,-0.15,0,1);
-                        border: solid green 5px; border-radius:0px; 
+                        border: solid blue 5px; border-radius:0px; 
                         content:''; background-color: black; width:103%; height:103%; box-sizing: border-box; position:absolute;}
         .fsLeft:after {-webkit-transform: matrix3d(0,0,1,0,   0,1,0,0,   -1,0,0,0,  -0.15,0,0,1);
                                transform: matrix3d(0,0,1,0,   0,1,0,0,   -1,0,0,0,  -0.15,0,0,1);
-                        border: solid green 5px; border-radius:0px; 
+                        border: solid white 5px; border-radius:0px; 
                         content:''; background-color: black; width:103%; height:103%; box-sizing: border-box; position:absolute;}
-        .fsRight:after{-webkit-transform: matrix3d(0,0,-1,0,  0,1,0,0,   1,0,0,0,   0,0,-0.15,1);
-                               transform: matrix3d(0,0,-1,0,  0,1,0,0,   1,0,0,0,   0,0,-0.15,1);
-                        border: solid green 5px; border-radius:0px; 
+        .fsRight:after{-webkit-transform: matrix3d(0,0,-1,0,  0,1,0,0,   1,0,0,0,   -0.15,0,0,1);
+                               transform: matrix3d(0,0,-1,0,  0,1,0,0,   1,0,0,0,   -0.15,0,0,1);
+                        border: solid violet 5px; border-radius:0px; 
                         content:''; background-color: black; width:103%; height:103%; box-sizing: border-box; position:absolute;}
         
         /*cube face setting */
